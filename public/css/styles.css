@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -29,208 +34,35 @@ article {
     background-color: white;
 }
 .logo {
-    flex: 1 1 50%;
-    display: flex;
-    align-items: center;
+
+    width: 50%;
 }
 
 .logo img {
-    width: 100px;
-    max-width: 100%;
+    width: 40vw;
 }
 
-.search-bar {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #666;
-    border-radius: 5px;
-}
-
-.promo-text {
-    background-color: #03264C;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #ebebeb;
-    width: 100%;
-}
-
-.navbar ul li {
-    padding: 10px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #1259c3;
-    font-weight: bold;
-}
-
-.burger-menu {
-    display: block; 
-}
-
-
-main {
-    margin: 0 auto;
-    width: 90%;
-}
-
-main section {
-    margin-bottom: 20px;
-}
-
-main section h2 {
-    font-size: 24px;
-    color: #03264C;
-}
-
-main section .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-main section .product-item {
-    flex: 1 1 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+.infoArticulo {
+    border-top: solid 1px #ebebeb;
     padding: 15px;
-    border-top: 1px solid #ebebeb;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    line-height: 5px;
+    position: relative;
+
 }
 
-main section .product-item img {
-    width: 150px;
-    height: auto;
-}
-
-main section .product-item .price-discount {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 5px;
-}
-
-main section .product-item .price-discount p {
-    margin: 0;
-}
-
-main section .product-item .price {
-    flex: 1 1 30%;
-    font-size: 18px;
-    color: #39b54a;
-}
-
-main section .product-item .discount {
-    flex: 1 1 70%;
-    font-size: 16px;
-    color: #EAC926;
-}
-
-main section .product-item .description {
-    font-size: 16px;
-    color: #666;
-    margin-top: 5px;
-    width: 100%;
-}
-
-.product-desc-box > .product-delivery-icon {
-    display: block;
-    font-size: 16px;
+.iconoCamion {
+    background-color: white;
+    border-radius: 50%;
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
+    border: solid 1px rgb(31, 196, 31);
+    color: rgb(31, 196, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 20px;
     top: -15px;
-}
-
-.product-desc-box {
-    position: relative;
-}
-
-
-footer div {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-footer div p {
-    margin: 5px 0;
-}
-
-
-@media (min-width: 361px) {
-    .search-bar input {
-        width: 60%;
-    }
-
-    .promo-text {
-        width: 100%;
-    }
-
-    .navbar ul {
-        flex-wrap: nowrap;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-    .navbar ul li {
-        padding: 10px 20px;
-    }
-}
-
-@media (min-width: 769px) {
-    header {
-        flex-direction: row;
-    }
-
-    .search-bar input {
-        width: 40%;
-    }
-
-    .promo-text {
-        width: auto;
-    }
-
-    .navbar ul {
-        flex-wrap: nowrap;
-    }
-
-    .navbar ul li {
-        padding: 10px 20px;
-    }
-
-    main section .product-list {
-        justify-content: space-between;
-    }
-
-    main section .product-item {
-        flex: 1 1 calc(25% - 20px); 
-    }
+    font-size: 16px;
 }
